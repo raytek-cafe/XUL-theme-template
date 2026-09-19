@@ -1,0 +1,18 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+.example-dialog-content {
+  gap: 12px;
+  padding: 24px;
+  max-width: 380px;
+}
+
+#example-dialog-heading {
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+#example-dialog-description {
+  line-height: 1.5;
+}

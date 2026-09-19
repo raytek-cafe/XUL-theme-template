@@ -1,0 +1,45 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+:root[example-xul-theme="true"] {
+  --example-accent: #8b6cff;
+  --example-toolbar: #211a3d;
+  --example-toolbar-alt: #302653;
+  --example-text: #f7f4ff;
+}
+
+:root[example-xul-theme="true"] #navigator-toolbox {
+  color: var(--example-text) !important;
+  background: var(--example-toolbar) !important;
+  border-block-end: 2px solid var(--example-accent) !important;
+}
+
+:root[example-xul-theme="true"] #nav-bar {
+  background: linear-gradient(
+    90deg,
+    var(--example-toolbar),
+    var(--example-toolbar-alt)
+  ) !important;
+}
+
+:root[example-xul-theme="true"] #nav-bar toolbarbutton:not([disabled]) {
+  color: var(--example-text) !important;
+  fill: var(--example-text) !important;
+  --toolbarbutton-icon-fill: var(--example-text);
+}
+
+:root[example-xul-theme="true"] #urlbar {
+  color: #160d2d !important;
+  background: #f8f6ff !important;
+  border: 1px solid var(--example-accent) !important;
+  border-radius: 4px !important;
+}
+
+:root[example-xul-theme="true"] .tabbrowser-tab[selected] .tab-background {
+  background: var(--example-accent) !important;
+}
+
+:root[example-xul-theme="true"] .tabbrowser-tab[selected] .tab-content {
+  color: #160d2d !important;
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>example-xul-theme@nocturne.invalid</em:id>
+    <em:name>XUL Theme Example</em:name>
+    <em:version>1.0.0</em:version>
+    <em:type>4</em:type>
+    <em:bootstrap>false</em:bootstrap>
+    <em:unpack>true</em:unpack>
+    <em:internalName>xul-theme-example</em:internalName>
+    <em:description>Example Description</em:description>
+    <em:creator>Example Creator</em:creator>
+    <em:icon64URL>icon.png</em:icon64URL>
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+		<!-- Version checks should be used as a way to lock unsupported versions (If a theme is unsupported on a version higher than 153 then 
+			 it shouldn't advertise itself to have a max version higher than the supported one.-->
+        <em:minVersion>153.0</em:minVersion>
+        <em:maxVersion>153.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>

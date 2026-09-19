@@ -1,0 +1,3 @@
+content xul-theme-example content/
+locale xul-theme-example en-US locale/en-US/
+overlay chrome://browser/content/browser.xhtml chrome://xul-theme-example/content/overlay.xhtml

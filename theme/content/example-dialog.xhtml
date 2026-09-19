@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?csp default-src chrome:; style-src chrome:; ?>
+<window
+  xmlns:html="http://www.w3.org/1999/xhtml"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+  id="example-xul-theme-dialog-window"
+  role="dialog"
+  width="420"
+  height="190"
+>
+  <dialog id="example-xul-theme-dialog" buttons="accept">
+    <linkset>
+      <html:link rel="stylesheet" href="chrome://global/skin/global.css"/>
+      <html:link
+        rel="stylesheet"
+        href="chrome://xul-theme-example/content/example-dialog.css"
+      />
+    </linkset>
+    <script src="chrome://xul-theme-example/content/example-dialog.js"/>
+    <vbox class="example-dialog-content">
+      <label id="example-dialog-heading" class="header"/>
+      <description id="example-dialog-description"/>
+    </vbox>
+  </dialog>
+</window>
